@@ -169,6 +169,7 @@ h3{
     line-height: 35px;
     font-size: 30px;
     padding-left: 7%;
+    padding-right: 7%;
   }
 
   @media screen and (max-width: 600px) {
