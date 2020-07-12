@@ -8,6 +8,8 @@
     width: auto;
 }
 
+
+
 .progressbar {
     
   background-color: gray;
@@ -21,11 +23,19 @@
   border-radius: 10px;
 }
 
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #209191;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 li,a{
     font-family: 'Fredoka One', cursive;
     font-weight: 300;
     font-size: 20px;
-    color: #f1f1f1;
+    color: #ffff;
     text-decoration: none;
     
 }
@@ -35,18 +45,21 @@ h1{
     font-weight: 300;
     font-size: 50px;
     padding-bottom: 1%;
-    text-decoration: none;  
+    text-decoration: none; 
+    color: #ffff; 
+    
 }
 
 p{
-    font-size: 20px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h2{
     font-family: 'Fredoka One', cursive;
     font-weight: 300;
     font-size: 25px;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none; 
 }
 
@@ -67,7 +80,7 @@ h3{
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
-    background-color: #24252A;
+    
 }
 
 .logo{
@@ -78,6 +91,10 @@ h3{
     list-style: none;
     width: 100%;
     position: fixed;
+    background-color: transparent;
+    -webkit-box-shadow: 6px 1px 60px 26px rgba(0,0,0,0.71);
+    -moz-box-shadow: 6px 1px 60px 26px rgba(0,0,0,0.71);
+    box-shadow: 6px 1px 60px 26px rgba(0,0,0,0.71);
     
 }
 
@@ -91,21 +108,10 @@ h3{
 }
 
 .navbar li a:hover {
-    color: #0088a9;
+    color: #102024;
 }
 
-button{
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
 
-button:hover {   
-    background-color: rgba(0, 136, 169, 0.8);
-}
 
 @media screen and (max-width: 600px) {
     .navbar li:not(:first-child) {display: none;}
@@ -131,16 +137,22 @@ button:hover {
   }
 
 .head-container{
-    background-image: url('../images/header.png'); 
-    width: auto;
+    background-image: url('../images/business-2846221_1920.jpg');
+    
+    width: 100%;
     display: grid;
-    height:  500px;
+    height: 500px;
     grid-template-columns: 100%;
     text-align: left;
     align-content: center;
     padding: 20px 0;
     font-size: 30px;
     padding-left: 5%;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .flex-container {
@@ -153,9 +165,10 @@ button:hover {
   .flex-container > div {
     width: 40% ;
     margin: 10px;
-    text-align: center;
+    text-align: justify;
     line-height: 35px;
     font-size: 30px;
+    padding-left: 7%;
   }
 
   @media screen and (max-width: 600px) {
@@ -171,7 +184,7 @@ button:hover {
     .flex-container > div {
       width: auto ;
       margin: 10px;
-      text-align: center;
+      text-align: justify;
       line-height: 35px;
       font-size: 30px;
     }
