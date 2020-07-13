@@ -1,6 +1,6 @@
 # Personal-Website
 
-Page created to demostrate all my personal information algo with my curriculum vitae.
+Page created to demostrate all my personal information also with my curriculum vitae.
 
 In technical information the page was created with HTML, CSS and Javascript.
 
