@@ -15,12 +15,10 @@ img{
   height: 800px;
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1024px) {
   
 img{
-  margin-top: 5%;
-  width: 300px;
-  height: 800px;
+  display: none;
 }
 }
 
@@ -53,7 +51,7 @@ img{
 
 @media screen and (max-width: 1330px) {
   .dot {
-    height: 25px;
+    height: 16px;
     width: 16px;
     background-color: #209191;
     border-radius: 50%;
@@ -196,7 +194,7 @@ h3{
   }
   
   .flex-container > div {
-    width: 40% ;
+    width: 100% ;
     margin: 10px;
     text-align: justify;
     line-height: 35px;
