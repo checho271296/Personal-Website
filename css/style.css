@@ -11,8 +11,8 @@
 
 
 img{
-  width: 300px;
-  height: 700px;
+  width: 500px;
+  height: 800px;
 }
 
 @media screen and (max-width: 1330px) {
@@ -20,7 +20,7 @@ img{
 img{
   margin-top: 5%;
   width: 300px;
-  height: 700px;
+  height: 800px;
 }
 }
 
@@ -28,17 +28,27 @@ img{
   
   img{
     margin-top: 5%;
-    width: 500px;
-    height: 700px;
+    width: 640px;
+    height: 800px;
   }
   }
 
 .dot {
   height: 25px;
-  width: 17px;
+  width: 25px;
   background-color: #209191;
   border-radius: 50%;
   display: inline-block;
+}
+
+@media screen and (max-width: 1330px) and (orientation : landscape) {
+  .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #209191;
+    border-radius: 50%;
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 1330px) {
